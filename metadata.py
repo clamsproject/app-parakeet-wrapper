@@ -52,9 +52,9 @@ def appmetadata() -> AppMetadata:
     # Parameters for model selection and runtime
     metadata.add_parameter(
         name='contextSize',
-        description='Local attention context size for the model. Can be any positive integer, or 0 to set global (full-context) attention. Larger context sizes may improve performance but require a lot more memory. For desktop CUDA device with 12GB VRAM, a context size of around 100 is recommended for full utilization of VRAM. Default is 96',
+        description='Local attention context size for the model. Can be any positive integer, or 0 to set global (full-context) attention. Larger context sizes may improve performance but require a lot more memory. For desktop CUDA device with 12GB VRAM, a context size of around 100 is recommended for full utilization of VRAM. Default is 400',
         type='integer',
-        default='96'
+        default='400'
     )
     metadata.add_parameter(
         name='modelSize',
